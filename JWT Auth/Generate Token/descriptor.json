@@ -1,0 +1,40 @@
+{
+  "description": "Generates a JSON Web Token (JWT) for given user ID.",
+  "links": {
+    "input": [
+      {
+        "name": "In",
+        "type": "message"
+      }
+    ],
+    "output": [
+      {
+        "name": "Out",
+        "type": "message"
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "secret",
+      "label": "Secret",
+      "description": "String used to sign the token.",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "name": "issuer",
+      "label": "Issuer",
+      "description": "Provide the token issuer.",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "name": "id",
+      "label": "User ID",
+      "description": "Provide the ID of the user this token is for.",
+      "type": "integer",
+      "mandatory": true
+    }
+  ]
+}
