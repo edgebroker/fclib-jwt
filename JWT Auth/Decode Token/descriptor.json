@@ -1,0 +1,40 @@
+{
+  "description": "Decodes a JSON Web Token (JWT) and sets the User ID.",
+  "links": {
+    "input": [
+      {
+        "name": "In",
+        "type": "message"
+      }
+    ],
+    "output": [
+      {
+        "name": "Out",
+        "type": "message"
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "secret",
+      "label": "Secret",
+      "description": "String used to sign the token.",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "name": "issuer",
+      "label": "Issuer",
+      "description": "Provide the token issuer.",
+      "type": "string",
+      "mandatory": true
+    },
+    {
+      "name": "token",
+      "label": "Token",
+      "description": "Provide the token string to decode.",
+      "type": "string",
+      "mandatory": true
+    }
+  ]
+}
