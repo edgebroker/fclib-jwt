@@ -5,7 +5,7 @@ function handler(In) {
 
     try {
         var id = this.authToken.setToken(token).decodeJwt().getId();
-        clone.property("id").set(id);
+        clone.property("decoded_auth_token_id").set(id);
     } catch (e) {
         // invalid token
     }
