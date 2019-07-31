@@ -33,7 +33,7 @@
       "name": "id",
       "label": "User ID",
       "description": "Provide the ID of the user this token is for.",
-      "type": "integer",
+      "type": "string",
       "mandatory": true
     }
   ]
